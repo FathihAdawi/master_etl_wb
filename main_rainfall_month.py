@@ -17,6 +17,7 @@ from packages import \
     que_insert_aws_ars
 # import cProfile
 
+print(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
 start_time = time.time()
 
 remapping_cols_curah_hujan = [
@@ -185,6 +186,7 @@ def calc_rainfall_data():
         )
 
     print("--- %s seconds ---" % (time.time() - start_time))
+    print(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
 
 
 calc_rainfall_data()

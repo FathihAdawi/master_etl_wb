@@ -7,9 +7,11 @@ import pandas as pd
 import polars as pl
 import numpy as np
 import time
+from datetime import datetime
 from packages import que_as_bjr_pis,que_del_bjr_pis,que_insert_bjr_pis
 # import cProfile
 
+print(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
 start_time = time.time()
 
 remapping_cols_as = [
@@ -89,6 +91,7 @@ def calc_bjr_pis():
     conx_dwh.commit()
 
     print("--- %s seconds ---" % (time.time() - start_time))
+    print(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
 
 
 calc_bjr_pis()
