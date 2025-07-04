@@ -22,7 +22,7 @@ remapping_cols_as = [
 def init_dwh():
     # [VARIABLES DB]
     path_db = 'D:\All_app_code\Testing Apps\master_etl_wb\db_dwh.ini'
-    section = 'tpadw_db'
+    section = 'dwh'
     db_info = db_init(path_db, section)
 
     # [CONNECTION & CURSOR]

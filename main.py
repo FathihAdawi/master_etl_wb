@@ -34,7 +34,7 @@ remapping_cols_wb = [
 def init_staging():
     # [VARIABLES DB]
     path_db = 'D:\All_app_code\Testing Apps\master-etl_pyspark\db_dwh.ini'
-    section = 'staging_db'
+    section = 'staging'
     staging_info = db_init(path_db,section)
 
     # [CONNECTION STRING]
@@ -53,7 +53,7 @@ def init_staging():
 def init_dwh():
     # [VARIABLES DB]
     path_db = 'D:\All_app_code\Testing Apps\master_etl_wb\db_dwh.ini'
-    section = 'tpadw_db'
+    section = 'dwh'
     db_info = db_init(path_db, section)
 
     # [CONNECTION & CURSOR]
